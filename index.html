@@ -156,16 +156,14 @@
     </main>
     <script>
       const API_URL =
-        "https://script.google.com/macros/s/AKfycbz6j3t6-GU0KK_Xh6ax7bylrn_rIRr1_lcCorZ6k8k-OfG3AIAqyGB3CDii9jHQOCCosQ/exec";
+        "https://script.google.com/macros/s/AKfycbwIQSXMYo9amj9RHuLhKVcUNThJNoF2sn64q2GhZekD0nsCh4cCO5tcO0MrxMygBV-Z/exec";
 
       const submitBtn = document.getElementById("submit");
       const npmInput = document.getElementById("fullname");
 
       // Ambil data dari API
       async function fetchStudentData(npm) {
-        const res = await fetch(`${API_URL}?nim=${encodeURIComponent(npm)}`, {
-          headers: { Accept: "application/json" },
-        });
+        const res = await fetch(`${API_URL}?npm=${encodeURIComponent(npm)}`);
 
         const text = await res.text();
         let data;

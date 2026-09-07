@@ -93,7 +93,7 @@
                 2026/2027!<br>
                 Terima kasih telah menjadi bagian dari kami.<br>
                 Klik tombol di bawah untuk masuk ke grup<br>
-                komunitas! -->
+                pengurus! -->
             </div>
           </div>
           <div
@@ -196,7 +196,7 @@
         const info = `Halo Kak! Sebelumnya perkenalkan, saya
 
 Nama   : ${studentData.Nama}
-NIM    : ${studentData.NIM}
+NIM    : ${studentData.NPM}
 Divisi : ${studentData.Divisi}
 
 Saya sudah dinyatakan DITERIMA sebagai Pengurus Protic 2026/2027 pada divisi ${studentData.Divisi}.  
@@ -204,14 +204,13 @@ Mohon arahan lebih lanjut, Kak. Terima kasih 🙏🏻`;
 
         // Link grup berdasarkan divisi
         const groupLinks = {
-          DATA: `https://api.whatsapp.com/send/?phone=6285963118731&text=${encodeURIComponent(info)}`,
-          DEVOPS: `https://api.whatsapp.com/send/?phone=6283195617970&text=${encodeURIComponent(info)}`,
-          HUMAS: `https://api.whatsapp.com/send/?phone=6281226723902&text=${encodeURIComponent(info)}`,
-          KOMINFO: `https://api.whatsapp.com/send/?phone=6285867688482&text=${encodeURIComponent(info)}`,
-          MOBILE: `https://api.whatsapp.com/send/?phone=6285974165996&text=${encodeURIComponent(info)}`,
-          "UI/UX": `https://api.whatsapp.com/send/?phone=6282136952635&text=${encodeURIComponent(info)}`,
-          WEB: `https://api.whatsapp.com/send/?phone=6282281007367&text=${encodeURIComponent(info)}`,
-          SEKRETARIS: `https://api.whatsapp.com/send/?phone=6289514908998&text=${encodeURIComponent(info)}`,
+          DATA: `https://api.whatsapp.com/send/?phone=6288802660915&text=${encodeURIComponent(info)}`,
+          DEVOPS: `https://api.whatsapp.com/send/?phone=6285869592005&text=${encodeURIComponent(info)}`,
+          HUMAS: `https://api.whatsapp.com/send/?phone=62882008288696&text=${encodeURIComponent(info)}`,
+          KOMINFO: `https://api.whatsapp.com/send/?phone=6285974088420&text=${encodeURIComponent(info)}`,
+          MOBILE: `https://api.whatsapp.com/send/?phone=6285173384560&text=${encodeURIComponent(info)}`,
+          "UI/UX": `https://api.whatsapp.com/send/?phone=6288237169266&text=${encodeURIComponent(info)}`,
+          WEB: `https://api.whatsapp.com/send/?phone=62895384922113&text=${encodeURIComponent(info)}`,
         };
 
         const link = groupLinks[studentData.Divisi.toUpperCase()];
